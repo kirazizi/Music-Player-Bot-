@@ -6,7 +6,7 @@
 /*   By: sbzizal <sbzizal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 21:52:04 by sbzizal           #+#    #+#             */
-/*   Updated: 2024/02/12 21:56:37 by sbzizal          ###   ########.fr       */
+/*   Updated: 2024/02/12 22:16:40 by sbzizal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,9 +105,8 @@ int main() {
             }
             break;
         } 
-        else {
-            std::cout << "Unknown command. Available commands: list, play <index>, stop, quit" << std::endl;
-        }
+        else
+            std::cout << "\033[1;31m Unknown command. Available commands: list, play, stop, quit \033[0m" << std::endl;
     }
     return 0;
 }
